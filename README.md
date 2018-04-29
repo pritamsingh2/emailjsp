@@ -30,7 +30,7 @@ function validate() {
     $result.text(email + " is valid ");
     $result.css("color", "green");
   } else {
-    $result.text(email + " is not valid");
+    $result.text("Please enter valid email ID(example:***@***.com)");
     $result.css("color", "red");
   }
   return false;
@@ -40,7 +40,7 @@ $("#validate").bind("click", validate);
 	</script>
 	
 
-<body onload="validate()">
+<body oninput="validate()">
 <div class="container-fluid">
 
 
@@ -74,7 +74,7 @@ $("#validate").bind("click", validate);
 <button type="button" ; style="background-color: lightblue" >Email Password </button>
  </div>
  <div class="col-sm-4">
- <div style=" border-left: 1px solid black; height: 320px; width:5%; margin-left:50%; text-align: center; position: absolute;">
+ <div style=" border-left: 1px solid black; height: 520px; width:5%; margin-left:50%; text-align: center; position: absolute;">
  <span style="left: -10px; top:160px; position: relative; background-color: white;">
  OR
  </span>
